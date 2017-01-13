@@ -70,7 +70,7 @@ body{
     font-family: 'Gotham Book', sans-serif;
     font-size: 14px;
 }
-h2 ,h4, .btn,
+h2 ,h3, h4, .btn,
 .topmenu .navbar-default a{
     font-family: 'gothamvnubold', sans-serif;
 }
@@ -80,6 +80,10 @@ h2{
     margin: 0;
     text-transform: uppercase;
 }
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
 h4{
     font-weight: bold;
     font-size: 14px;
@@ -88,21 +92,28 @@ h4{
     color: red;
 }
 /***************** Wellcome *****************/
+/*
 .wellcome,
 .video,
 .reg,
 .pro-test,
-.discover{
+.discover,
+.promotion-content,
+.promotion-footer
+*/
+article > div section:not(:first-child){
     margin-top: 30px;
      padding: 30px 0; 
 }
 .wellcome{
     padding-bottom: 0;
 }
-.hr{
-    width: 65px;
+hr{
     height: 1px;
     border-color: #2b328c;
+}
+.hr{
+    width: 65px;
 }
 .title-sub,
 .title-slider{
@@ -286,6 +297,42 @@ h4{
     height: auto;
     padding: 15px 15px 25px;
 }
+/*================================= Contact =================================*/
+.contact-footer{
+    margin-top: 40px !important;
+    padding: 75px 35px 55px !important;
+    background: #ffcb05;
+}
+.contact-footer h4,
+.contact-footer p{
+    margin: 0;
+}
+.contact-footer > div > h4:first-child{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.contact-footer .reg-box{
+    padding: 0;
+}
+.contact-left > div{
+    margin: 20px auto;
+}
+.contact-right{
+    margin-top: -20px;
+}
+.drop-down{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-left: 10px;
+    background: url(../images/icon-drop.png) no-repeat;
+}
+/*================================= Promotion =================================*/
+.promotion-box {
+    border: 1px solid #2b328c;
+    border-top: none;
+    border-bottom: 7px solid #ffcb05;
+}
 /*================================= Footer =================================*/
 footer {
     margin-top: 40px;
@@ -325,17 +372,21 @@ footer > div > div > div:not(:last-child){
     background: transparent;
     color: #2b328c;
 }
-.btn-dis:hover{
+.btn-dis:hover,
+.btn-read-02:hover{
     background: #2b328c;
     color: #ffcb05;
     border: 1px solid #2b328c;
 }
-.btn-reg{
-    width: 100px;
-    height: 35px;
-    border-radius: 35px;
+.btn-reg,
+.btn-read-02{
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
     background: #2b328c;
     color: #fff;
+    line-height: 28px;
+    padding: 0;
 }
 .btn-read,
 .content-destination .btn-reg-02,
@@ -347,7 +398,13 @@ footer > div > div > div:not(:last-child){
     color: #ffcb05;
     font-size: 10px;
 }
-.content-destination .btn-reg-02{
+.btn-read-02{
+    height: 25px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.content-destination .btn-reg-02,
+.btn-read-02{
     background: transparent;
     color: #2b328c;
     border: 1px solid #2b328c;
@@ -372,7 +429,7 @@ footer > div > div > div:not(:last-child){
 .reg select{
     color: #2b328c !important;
 }
-.reg .btn-reg{
+.reg-box .btn-reg{
     margin-top: 30px;
 }
 /********************** Slider ********************/

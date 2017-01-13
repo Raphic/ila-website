@@ -95,7 +95,8 @@
         height: 230px;
         overflow: hidden;
     }
-    .pro-test{
+    .pro-test,
+    .contact-footer{
         text-align: center;
     }
     .pro-test .hr{
@@ -114,6 +115,16 @@
     }
     .box-destination a{
         display: block;
+    }
+    .contact-left > div:nth-child(odd){
+        margin: -10px 0 10px;
+    }
+    .contact-right{
+        margin-top: 40px;
+        padding: 0 100px;
+    }
+    .btn-read-02{
+        margin-top: 5px;
     }
     footer{
         text-align: center;
@@ -137,11 +148,7 @@
     .title-slider{
         font-size: 12px;
     }
-    .wellcome,
-    .video,
-    .reg,
-    .pro-test,
-    .discover{
+    article > div section:not(:first-child){
         margin-top: 30px;
          padding: 20px 0 30px; 
     }
@@ -150,6 +157,13 @@
     }
     .bg-destination img{
         width: auto;
+    }
+    .contact-right{
+        padding: 0 40px;
+    }
+    .contact-footer{
+        margin-top: 20px!important;
+        padding: 40px 15px 30px!important;
     }
 }
 
