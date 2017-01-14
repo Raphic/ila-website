@@ -38,6 +38,15 @@
 .bg-yellow{
     background: #ffcb05;
 }
+.bg-blue{
+    background: #050D9E;
+}
+.bg-blue-01{
+    background: #27A9E1;
+}
+.bg-blue-02{
+    background: rgba(39, 169, 255, 0.2);
+}
 /*================================= Header =================================*/
 header,
 footer{
@@ -103,7 +112,8 @@ body{
     font-size: 14px;
 }
 h2 ,h3, h4, .btn,
-.topmenu .navbar-default a{
+.topmenu .navbar-default a,
+.course-detail-table th{
     font-family: 'gothamvnubold', sans-serif;
 }
 .topmenu .navbar-default a{
@@ -130,6 +140,9 @@ h4{
 }
 .text-red-02{
     color: #F16521;
+}
+.text-blue{
+    color: #050D9E;
 }
 /***************** Wellcome *****************/
 /*
@@ -394,6 +407,46 @@ hr{
 .promotion-bottom > div > div:last-child{
     margin-top: 35px;
 }
+/*================================= Course Detail =================================*/
+.course-detail-main ul{
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 20px 0;
+}
+.course-detail-main > div > div {
+    margin-top: 40px;
+}
+.course-detail-table .title,
+.course-detail-table th{
+    margin: 0;
+    padding: 30px 0 !important;
+}
+.course-detail-table table{
+    color: #000;
+    border: 1px dotted #D1D2D4;
+}
+.course-detail-table th,
+.course-detail-table tr td:first-child{
+    width: 12.5%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.course-detail-table th:not(:first-child){
+    border-left: 1px dotted #D1D2D4;
+}
+.course-detail-table tr td:first-child{
+    border-bottom: 1px solid #fff;
+}
+.course-detail-table tr td{
+    text-align: justify;
+    border-bottom: 1px dotted #D1D2D4;
+    border-left: 1px dotted #D1D2D4;
+    padding: 20px 10px;
+}
+.course-detail-table tr td ul{
+    margin: 0;
+}
 /*================================= Footer =================================*/
 footer {
     margin-top: 40px;
@@ -553,4 +606,33 @@ footer > div > div > div:not(:last-child){
 .slider-lv3 .swiper-pagination-bullet-active{
     background: #ffcb05;
 }
-
+/********************** Table ********************/
+.rps-table th {
+    display: none;
+}
+.rps-table td {
+    display: block;
+}
+.rps-table td:before{
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 7.5em;
+    display: inline-block;
+    color: #044476;
+}
+.rps-table td:first-child {
+    padding-top: .5em;
+}
+.rps-table td:last-child {
+    padding-bottom: .5em;
+}
+@media (min-width: 768px) {
+    .rps-table td:before {
+        display: none;
+    }
+    .rps-table th,
+    .rps-table td {
+        display: table-cell;
+        padding: .25em .5em;
+    }
+}
