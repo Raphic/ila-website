@@ -60,6 +60,10 @@
     .navbar-default .navbar-toggle:hover .icon-bar{
         background: #2b328c;
     }
+    .topmenu .navbar-nav .open .dropdown-menu{
+        background: rgba(0 ,0 ,0 ,0.1);
+        border-radius: 0 !important;
+    }
     .logo-box{
         margin-top:40px;
     }
