@@ -123,7 +123,7 @@ h3{
 }
 h4{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 .text-red{
     color: red;
@@ -315,10 +315,10 @@ hr{
     height: 480px;
     overflow: hidden;
     border: 1px solid #2b328c;
-    margin-top: 40px;
+    margin-top: 30px;
 }
-.box-destination:first-child{
-    margin-top: 80px;
+.destination-main > div > div{
+    margin-top: 60px;
 }
 .box-destination .hr{
     margin-left: 0;
@@ -339,14 +339,17 @@ hr{
 .content-destination{
     background: #fff;
     padding-top: 10px;
-    height: 100px;
+    max-height: 100px;
     overflow: hidden;
 }
 .box-active .content-destination,
-.content-destination:hover{
+.box-destination:hover .content-destination{
     background: #ffcb05;
-    height: auto;
+    max-height: 400px;
     padding: 15px 15px 25px;
+}
+.box-destination:hover .bg-destination img{
+    transform: scale(1 , 0.9);
 }
 /*================================= Contact =================================*/
 .contact-footer{
@@ -357,7 +360,7 @@ hr{
 .contact-footer p{
     margin: 0;
 }
-.contact-footer > div > h4:first-child{
+.contact-left h4:first-child{
     margin-bottom: 20px;
     display: inline-block;
 }
@@ -366,9 +369,6 @@ hr{
 }
 .contact-left > div{
     margin: 20px auto;
-}
-.contact-right{
-    margin-top: -20px;
 }
 .drop-down{
     width: 11px;
@@ -467,6 +467,11 @@ footer > div > div > div:not(:last-child){
     height: 25px;
     line-height: 19px;
     margin-top: 10px;
+}
+.btn-reg-02{
+    width: 87px;
+    font-size: 12px !important;
+    height: 27px;
 }
 .content-destination .btn-reg-02,
 .btn-read-02{
