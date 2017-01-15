@@ -7,6 +7,13 @@
         font-size: 12px;
         padding: 5px 15px;
     }
+    .testtimanial-slider,
+    .testtimonial-list{
+        height: 490px;
+    }
+    .testtimanial-slider-item{
+        top: 250px;
+    }
 }
 @media only screen and (max-width: 992px){
     .topmenu .navbar-default a{
@@ -34,6 +41,13 @@
     }
     .promotion-bottom h3{
         margin: 0 0 10px;
+    }
+     .testtimanial-slider,
+     .testtimonial-list{
+        height: 375px;
+    }
+    .testtimanial-slider-item{
+        top: 150px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -154,6 +168,31 @@
     .course-detail-table tr{
         margin-top: 10px;
     }
+    .testtimanial-slider,
+    .testtimonial-list{
+        height: 100%;
+    }
+    .testtimanial-slider-item {
+        top: auto;
+        bottom: 10px;
+    }
+    .testtimonial-list{
+        text-align: center;
+    }
+    .testtimonial-list-item img{
+        margin: auto;
+    }
+    .testtimonial .bottom > div,
+    .testtimonial .bottom > div:last-child .testtimonial-list-item{
+        height: 100% ;
+        text-align: center;
+    }
+    .testtimonial .bottom > div:last-child .testtimonial-list-item{
+        margin-left: -15px;
+    }
+    .testtimonial .bottom > div:first-child{
+        margin-bottom: 20px;
+    }
     footer{
         text-align: center;
     }
@@ -208,6 +247,13 @@
     .promotion-bottom > div > div:last-child{
         margin-top: 0px;
         padding-left: 100px;
+    }
+    .testtimonial .btn-dis{
+        position: absolute;
+        bottom: 10px;
+    }
+    .testtimonial .bottom > div:last-child .testtimonial-list-item .btn-dis{
+        position: relative;
     }
 }
 

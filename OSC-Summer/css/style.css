@@ -113,7 +113,10 @@ body{
 }
 h2 ,h3, h4, .btn,
 .topmenu .navbar-default a,
-.course-detail-table th{
+.course-detail-table th,
+blockquote,
+blockquote:after,
+blockquote:before{
     font-family: 'gothamvnubold', sans-serif;
 }
 .topmenu .navbar-default a{
@@ -135,6 +138,29 @@ h4{
     font-weight: bold;
     font-size: 16px;
 }
+blockquote{
+    quotes:none;
+    position: relative;
+    font-size: 14px;
+    border-left: none;
+    margin: 0;
+}
+blockquote:after,
+blockquote:before{
+    font-size: 28px;
+    position: absolute;
+    font-weight: bold;
+}
+blockquote:after{
+    content: "”";
+    bottom: 0;
+    right: 10px;
+}
+blockquote:before{
+    content: "“";
+    top: 0;
+    left: 0;
+}
 .text-red{
     color: red;
 }
@@ -143,6 +169,9 @@ h4{
 }
 .text-blue{
     color: #050D9E;
+}
+.text-yellow{
+    color: #FFCB04;
 }
 /***************** Wellcome *****************/
 /*
@@ -295,7 +324,8 @@ hr{
 .pro-text h2{
     font-size: 25px;
 }
-.pro-text h4{
+.pro-text h4,
+.testtimonial-list-item h4{
     font-size: 18px;
 }
 .img-box img{
@@ -447,6 +477,59 @@ hr{
 .course-detail-table tr td ul{
     margin: 0;
 }
+/*================================= Testtimonial =================================*/
+.testtimonial >div > div:first-child{
+    border: 1px solid #050D9E;
+}
+.testtimanial-slider,
+.testtimonial-list{
+    height: 560px;
+}
+.testtimanial-slider img{
+    width: 100%;
+}
+.testtimanial-slider-item{
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 1px 1px 1px #666;
+}
+.testtimonial .btn-dis{
+    position: relative;
+    margin-top: 30px;
+}
+.testtimonial-list{
+    padding: 20px 30px;
+    overflow:auto;
+}
+.testtimonial-list-item{
+        margin-top: 20px;
+    }
+.testtimonial-list-item p{
+    text-align: justify;
+}
+.testtimonial .bottom > div,
+.testtimonial .bottom > div:last-child .testtimonial-list-item{
+    height: 280px;
+    overflow: auto;
+}
+.testtimonial .bottom{
+    margin-top: 30px;
+}
+.testtimonial .bottom > div:first-child{
+    background: url(../images/img-testimonial-03.png) no-repeat;
+    padding: 20px 0 15px;
+}
+.testtimonial .bottom > div:last-child{
+    color: #fff;
+}
+.testtimonial .bottom > div:last-child .testtimonial-list-item{
+    padding: 15px;
+    margin-top: 0;
+    margin-right: -15px;
+}
 /*================================= Footer =================================*/
 footer {
     margin-top: 40px;
@@ -497,7 +580,6 @@ footer > div > div > div:not(:last-child){
     width: 120px;
     height: 30px;
     border-radius: 30px;
-    background: #2b328c;
     color: #fff;
     line-height: 28px;
     padding: 0;
