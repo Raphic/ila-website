@@ -196,21 +196,10 @@
     .promotion-bottom{
         background-position: -200px center;
     }
-    .course-detail-table table{
-        background: rgba(255, 203, 4 ,0.1);
-    }
-    .course-detail-main .row > div:last-child{
-        margin-top: 20px;
-    }
-    .course-detail-table tr td:first-child{
-        width: 100%;
-    }
-    .course-detail-table tr td{
-        padding: 10px;
-    }
-    .course-detail-table tr{
-        margin-top: 10px;
-    }
+    
+    
+    
+    
     .testtimanial-slider,
     .testtimonial-list{
         height: 100%;
