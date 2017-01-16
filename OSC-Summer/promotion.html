@@ -135,7 +135,7 @@
                         </section>
                         
                         <section class="promotion-bottom clearfix">
-                            <div class="conteiner-fluid">
+                            <div class="container-fluid">
                                 <div class="col-xs-4 col-xs-offset-5 col-sm-3 col-sm-offset-6 col-md-5 col-md-offset-5 col-lg-6 col-lg-offset-4">
                                     <h3>PROMOTION</h3>
                                     <p>ras rutrum nulla a bibendum feugiat. Ut aliquam dolo ras</p>
@@ -149,7 +149,7 @@
                         <!-- **************** Discover ****************-->
                         <section class="discover container-fluid ">
                             <center>
-                                <h2 class="col-xs-12">KHÁM PHÁ ĐIỂM ĐẾN</h2>
+                                <h2>KHÁM PHÁ ĐIỂM ĐẾN</h2>
                                 <hr class="hr">
                                 <ul class="to-local nopadding inline-list">
                                     <li class="active-bold"><a href="#">MỸ</a></li>
@@ -256,10 +256,11 @@
                                 <h4>HÀ NỘI</h4>
                                 <p>0912 766 549 - 0938 915 488</p>
                             </div>
+                            <div class="mb clearfix"></div>
                             <div class="col-xs-12 col-sm-3">
-                                <p class="website">ila-duhoc.edu.vn</p>
-                                <p class="mail">duhoc@ilavietnam.edu.vn</p>
-                                <p class="fb">facebook.com/ILADuhoc</p>
+                                <a target="_blank" href="http://ila-duhoc.edu.vn/" class="website">ila-duhoc.edu.vn</a>
+                                <a href="mailto:duhoc@ilavietnam.edu.vn" class="mail">duhoc@ilavietnam.edu.vn</a>
+                                <a target="_blank" href="http://facebook.com/ILADuhoc" class="fb">facebook.com/ILADuhoc</a>
                             </div>
                             <div class="col-xs-12 col-sm-3">
                                 <button class="btn btn-reg">ĐĂNG KÝ</button>
@@ -273,39 +274,8 @@
     </div>
     <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/swiper.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            //initialize swiper when document ready  
-            var swiper = new Swiper('.slider-lv1', {
-                slidesPerView: 3,
-                paginationClickable: true,
-                spaceBetween: 30,
-                autoplay: 2500,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                autoplayDisableOnInteraction: false
-            });
-            var mySwiper = new Swiper ('.slider-lv2', {
-                // Optional parameters
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: 2500,
-                autoplayDisableOnInteraction: false
-            });      
-            var mySwiper = new Swiper ('.slider-lv3', {
-                // Optional parameters
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: 2500,
-                autoplayDisableOnInteraction: false
-            });
-      });
-    </script>
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <script src="js/customScript.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -20,6 +20,9 @@
     .btn-dis{
         font-size: 0.7em;
     }
+    .content-destination{
+        max-height: 110px;
+    }
 }
 @media only screen and (max-width: 992px){
     .topmenu .navbar-default a{
@@ -33,7 +36,7 @@
         height: 128px;
     }
     .discover .box-text{
-        padding: 5%;
+        padding: 15% 5% 5%;
     }
     .discover .box-text h2{
         font-size: 20px;
@@ -56,6 +59,9 @@
     .testtimanial-slider-item{
         top: 150px;
     }
+    .content-destination{
+        max-height: 100px;
+    }
 }
 @media only screen and (max-width: 768px){
     .pc{
@@ -73,9 +79,13 @@
         z-index: 9998;
         box-shadow: 0 0 5px rgba(0,0,0,.8);
     }
+    .topmenu .navbar-default a{
+        font-size: 13px;
+    }
     .navbar-default .navbar-toggle:focus, 
     .navbar-default .navbar-toggle:hover{
         background: #ffcb05;
+        border: 1px solid #2b328c;
     }
     .navbar-default .navbar-toggle:focus .icon-bar , 
     .navbar-default .navbar-toggle:hover .icon-bar{
@@ -84,6 +94,12 @@
     .topmenu .navbar-nav .open .dropdown-menu{
 /*        background: rgba(0 ,0 ,0 ,0.1);*/
         border-radius: 0 !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,.2);
+        margin-bottom: 5px;
+    }
+    .topmenu .navbar-nav .open .dropdown-menu>li>a{
+        background: transparent !important;
+        color: #2b328c !important;
     }
     .logo-box{
         margin-top:40px;
@@ -139,6 +155,9 @@
         top: 0;
         right: 0;
     }
+    .discover .box-text{
+        padding-top: 45px;
+    }
     .bg-destination img{
         width: 100%;
     }
@@ -168,8 +187,8 @@
     .contact-footer h4.text-red-02{
         margin: 15px auto 20px;
     }
-    .btn-read-02{
-        margin-top: 5px;
+    .contact-left .btn-02{
+        margin-top: 1px;
     }
     .promotion-content .row > div:not(:first-child){
         margin-top: 25px;
@@ -202,6 +221,7 @@
     }
     .testtimonial-list{
         text-align: center;
+        padding: 20px 0;
     }
     .testtimonial-list-item img{
         margin: auto;
@@ -225,7 +245,13 @@
     }
     footer > div > div > div:not(:last-child){
         border: none;
-        height: auto;
+        min-height: auto;
+    }
+    footer > div > div > div:nth-child(4){
+        float: none;
+        width: 225px;
+        text-align: left;
+        margin: auto;
     }
 }
 @media only screen and (max-width: 480px){
@@ -234,6 +260,25 @@
     }
     .mb{
         display: block;
+    }
+    body{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .title-sub, .title-slider,
+    .testtimonial-list-item h4,
+    h4{
+        font-size: 14px;
+    }
+    .to-local li a,
+    .pro-text h4{
+        font-size: 16px;
+    }
+    .pro-text h2,
+    h3{
+        font-size: 18px;
     }
     .discover .top-box > div:last-child > div{
         height: 110px;
@@ -244,7 +289,7 @@
         font-size: 0.7em;
     }
     .btn-dis{
-        font-size: 0.5em;
+        font-size: 0.6em;
         padding: 0.5em 1.5em 0.2em;
         bottom:1.2em;
     }
@@ -290,6 +335,12 @@
     }
     .testtimanial-slider-item{
         bottom: 20px;
+    }
+    .testtimonial-detail p{
+        text-align: justify;
+    }
+    .content-destination{
+        max-height: 95px;
     }
 }
 
