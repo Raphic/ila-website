@@ -73,6 +73,12 @@ header{
     margin-left: 2px;
     color: #000!important;
 }
+/*
+.topmenu .navbar-default a{
+    border-radius:35px;
+    font-weight:bold;
+}
+*/
 .topmenu .dropdown-menu{
     background-color: #2b328c;
     padding: 10px;
@@ -106,6 +112,7 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b328c', endColorstr='#2b328c', GradientType=0);
     border-radius: 35px;
 }
+
 /*================================= Container =================================*/
 body{
     font-family: 'Gotham Book', sans-serif;
@@ -119,10 +126,7 @@ blockquote:after,
 blockquote:before{
     font-family: 'gothamvnubold', sans-serif;
 }
-.topmenu .navbar-default a{
-    border-radius:35px;
-    font-weight:bold;
-}
+
 h2{
     font-size: 30px;
     font-weight: bold;
@@ -161,6 +165,9 @@ blockquote:before{
     top: 0;
     left: 0;
 }
+.text-black{
+    color: #000;
+}
 .text-red{
     color: red;
 }
@@ -173,6 +180,9 @@ blockquote:before{
 .text-yellow{
     color: #FFCB04;
 }
+.text-bold{
+    font-weight: bold;
+}
 /***************** Wellcome *****************/
 /*
 .wellcome,
@@ -183,16 +193,14 @@ blockquote:before{
 .promotion-content,
 .promotion-bottom
 */
-article > div section:not(:first-child){
+article > div section:not(:first-child),
+.testtimonial{
     margin-top: 30px;
     padding: 30px 0; 
     overflow: hidden;
     /*margin-top: 30px;*/
 /*    padding: 60px 0; */
 }
-/*.wellcome{
-    padding-bottom: 0;
-}*/
 hr{
     height: 1px;
     border-color: #2b328c;
@@ -263,15 +271,6 @@ hr{
     left: 2em;
     bottom: 0;
     font-size: .9em;
-}
-.btn-dis{
-    right: 2em;
-    bottom: 1em;
-    font-size: 0.7em;
-    background:transparent;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    padding: 0.4em 1.5em 0.3em;
 }
 .overlay-img:before{
     content: "";
@@ -349,6 +348,9 @@ hr{
 .reg-box > div{
     margin-top: 20px;
 }
+.reg-box > div:nth-child(5){
+    margin-bottom: 30px;
+}
 .reg-box{
     padding: 0 100px;
 }
@@ -413,7 +415,10 @@ hr{
 .contact-left > div{
     margin: 20px auto;
 }
-.drop-down{
+.contact-left .btn-02{
+    margin-top: 10px;
+}
+.contact-left .drop-down{
     width: 11px;
     height: 11px;
     display: inline-block;
@@ -496,10 +501,6 @@ hr{
     text-align: left;
     text-shadow: 1px 1px 1px #666;
 }
-.testtimonial .btn-dis{
-    position: relative;
-    margin-top: 30px;
-}
 .testtimonial-list{
     padding: 20px 30px;
     overflow:auto;
@@ -530,13 +531,23 @@ hr{
     margin-top: 0;
     margin-right: -15px;
 }
+/*================================= Testtimonial Detail =================================*/
+.testtimonial-detail >div > div:first-child{
+    border: none;
+}
+.testtimonial-detail .testtimonial-list{
+    border-left: 1px solid #050D9E;
+}
+.testtimonial-detail .box-text{
+    margin: 20px 0 40px;
+}
 /*================================= Footer =================================*/
 footer {
     margin-top: 40px;
 }
 footer > div > div > div:not(:last-child){
     border-right: 1px solid #2b328c;
-    height: 130px;
+    min-height: 130px;
 }
 .website,
 .mail,
@@ -564,56 +575,61 @@ footer > div > div > div:not(:last-child){
     background: #fff url(../images/icon-fb.png) no-repeat center center;
 }
 /********************** Button ********************/
-.btn:hover{
+.btn,
+.btn-02,
+.btn-02:hover,
+.btn-03{
+    width: 90px;
+    height: 28px;
+    border-radius: 25px;
+    line-height: 26px;
+    padding: 0;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: #ffcb05;
+    background: #2b328c;
+    border: 1px solid #2b328c;
+}
+.btn:hover,
+.btn-02{
     border: 1px solid #2b328c;
     background: transparent;
     color: #2b328c;
 }
-.btn-dis:hover,
-.btn-read-02:hover{
-    background: #2b328c;
-    color: #ffcb05;
-    border: 1px solid #2b328c;
-}
-.btn-reg,
-.btn-read-02{
-    width: 120px;
-    height: 30px;
-    border-radius: 30px;
+.btn-reg{
     color: #fff;
-    line-height: 28px;
-    padding: 0;
 }
-.btn-read,
-.content-destination .btn-reg-02,
-.content-destination .btn-reg-02:hover{
-    padding: 3px 10px 4px;
-    line-height: 15px;
-    border-radius:20px;
-    background: #2b328c;
-    color: #ffcb05;
+.btn-sm,
+.btn-sm:hover{
+    width: 80px;
+    height: 20px;
+    border-radius: 20px;
+    line-height: 18px;
     font-size: 10px;
 }
-.btn-read{
-    font-size:12px;
-    padding:5px 12px 5px;
+.btn-dis,
+.btn-03{
+    background:transparent;
+    border: 1px solid #fff;
+    color: #fff;
 }
-.btn-read-02{
-    height: 25px;
-    line-height: 19px;
-    margin-top: 10px;
+.btn-dis{
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    right: 2em;
+    border-radius: 25px;
+    bottom: 0.8em;
+    font-size: 0.8em;
+    padding: 0.4em 1.5em 0.3em;
 }
-.btn-reg-02{
-    width: 87px;
-    font-size: 12px !important;
-    height: 27px;
-}
-.content-destination .btn-reg-02,
-.btn-read-02{
-    background: transparent;
-    color: #2b328c;
+.btn-dis:hover,
+.btn-03:hover{
+    color: #ffcb05;
+    background: #2b328c;
     border: 1px solid #2b328c;
 }
+
 .reg ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #2b328c;
 }
@@ -624,9 +640,6 @@ footer > div > div > div:not(:last-child){
 }
 .reg select{
     color: #2b328c !important;
-}
-.reg-box .btn-reg{
-    margin-top: 30px;
 }
 /********************** Slider ********************/
 .swiper-container {

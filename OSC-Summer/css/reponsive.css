@@ -14,6 +14,12 @@
     .testtimanial-slider-item{
         top: 250px;
     }
+    .title-country{
+        font-size: 0.8em;
+    }
+    .btn-dis{
+        font-size: 0.7em;
+    }
 }
 @media only screen and (max-width: 992px){
     .topmenu .navbar-default a{
@@ -37,7 +43,8 @@
         left: 0.5em;
     }
     .btn-dis{
-        font-size:0.6em;
+        font-size:0.5em;
+        bottom: 1.2em;
     }
     .promotion-bottom h3{
         margin: 0 0 10px;
@@ -75,7 +82,7 @@
         background: #2b328c;
     }
     .topmenu .navbar-nav .open .dropdown-menu{
-        background: rgba(0 ,0 ,0 ,0.1);
+/*        background: rgba(0 ,0 ,0 ,0.1);*/
         border-radius: 0 !important;
     }
     .logo-box{
@@ -125,6 +132,7 @@
     }
     .pro-text{
         min-height: auto;
+        margin-top: 20px;
     }
     .overlay-img:before,
     .discover .box-text{
@@ -137,12 +145,28 @@
     .box-destination a{
         display: block;
     }
+    .title-country{
+        font-size: 1em;
+    }
+    .btn-dis{
+        font-size: 0.8em;
+        bottom:1em;
+    }
+    .contact-left h4:first-child{
+        margin-bottom: 5px;
+    }
     .contact-left > div:nth-child(odd){
         margin: -10px 0 10px;
+    }
+    .contact-left > div:nth-child(even){
+        margin: 0px 0 30px;
     }
     .contact-right{
         margin-top: 40px;
         padding: 0 100px;
+    }
+    .contact-footer h4.text-red-02{
+        margin: 15px auto 20px;
     }
     .btn-read-02{
         margin-top: 5px;
@@ -174,7 +198,7 @@
     }
     .testtimanial-slider-item {
         top: auto;
-        bottom: 10px;
+        bottom: 40px;
     }
     .testtimonial-list{
         text-align: center;
@@ -193,11 +217,15 @@
     .testtimonial .bottom > div:first-child{
         margin-bottom: 20px;
     }
+    .testtimonial-detail .testtimonial-list{
+        border-left: none;
+    }
     footer{
         text-align: center;
     }
     footer > div > div > div:not(:last-child){
         border: none;
+        height: auto;
     }
 }
 @media only screen and (max-width: 480px){
@@ -211,6 +239,14 @@
         height: 110px;
     }
     .discover .top-box > div:last-child > div img{
+    }
+    .title-country{
+        font-size: 0.7em;
+    }
+    .btn-dis{
+        font-size: 0.5em;
+        padding: 0.5em 1.5em 0.2em;
+        bottom:1.2em;
     }
     .to-local{
         padding: 0 10px;
@@ -252,8 +288,8 @@
         position: absolute;
         bottom: 10px;
     }
-    .testtimonial .bottom > div:last-child .testtimonial-list-item .btn-dis{
-        position: relative;
+    .testtimanial-slider-item{
+        bottom: 20px;
     }
 }
 
