@@ -89,6 +89,9 @@ header{
     border-radius: 8px !important;
     left: 0;
 }
+.topmenu ul.nav li.dropdown:hover .dropdown-menu{
+        display: block;
+    }
 .topmenu .dropdown-menu li:not(:last-child){
     border-bottom: 1px solid #fff;
 }
