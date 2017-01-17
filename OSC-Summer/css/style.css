@@ -100,14 +100,16 @@ header{
     padding: 2px 5px;
 }
 .topmenu .navbar-default a:hover,
-.topmenu .navbar-default .active a{
+.topmenu .navbar-default .active a,
+.topmenu ul.nav li.dropdown:hover{
     border-radius: 35px !important;
     background: #2b328c!important;
 }
 .topmenu .navbar-default .active a,
 .topmenu .navbar-default .navbar-nav>.active>a,
 .topmenu .navbar-default .navbar-nav>.open>a,
-.topmenu .navbar-default a:hover{
+.topmenu .navbar-default a:hover,
+.topmenu ul.nav li.dropdown:hover>a{
     color: #ffcb05 !important;
 }
 .navbar-default .navbar-nav>.active>a, 
