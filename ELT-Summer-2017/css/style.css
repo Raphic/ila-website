@@ -316,11 +316,7 @@ header.top-header .title-header {
   .register form .form-group {
     margin-bottom: 25px; }
   .register form .row .col-md-5 span {
-    color: #fff;
-    vertical-align: baseline;
-    margin-right: 10px; }
-  .register form .row .col-md-5 input[type=radio] {
-    vertical-align: sub; }
+    color: #fff; }
 
 form label {
   color: #050D9E; }
@@ -328,6 +324,14 @@ form label {
 form input, form textarea, form select {
   border-color: #050D9E !important;
   color: #050D9E !important; }
+
+form input[type=radio] {
+  vertical-align: sub; }
+
+form div span {
+  color: #050D9E;
+  vertical-align: baseline;
+  margin-right: 10px; }
 
 ::-webkit-input-placeholder {
   color: #050D9E !important; }

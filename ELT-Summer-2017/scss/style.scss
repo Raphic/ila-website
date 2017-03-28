@@ -418,11 +418,6 @@ header.top-header{
             .col-md-5{
                 span{
                     color: $color-white;
-                    vertical-align: baseline;
-                    margin-right: 10px;
-                }
-                input[type=radio]{
-                    vertical-align: sub;
                 }
             }
         }
@@ -435,6 +430,16 @@ form{
     input,textarea,select{
         border-color: $color-blue !important;
         color: $color-blue !important;
+    }
+    input[type=radio]{
+        vertical-align: sub;
+    }
+    div{
+        span{
+            color: $color-blue;
+            vertical-align: baseline;
+            margin-right: 10px;
+        }
     }
 }
 ::-webkit-input-placeholder {
