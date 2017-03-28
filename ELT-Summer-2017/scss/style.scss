@@ -81,6 +81,16 @@ $padding-0: 0;
     background: transparent;
     border-color: $color-blue;
     color: $color-blue;
+    &:hover{
+        @extend .btn-blue;
+    }
+}
+.btn-white-border{
+    color: $color-white;
+    border-color: $color-white;
+    &:hover{
+        @extend .btn-yellow;
+    }
 }
 .btn-yellow{
     background: $color-yellow;
@@ -91,6 +101,13 @@ $padding-0: 0;
     color: $color-blue;
     font-weight: 300;
 }
+.text-content-02{
+    font-size: 16px;
+    line-height: 1.2em;
+}
+.note{
+    line-height: 1.2em;
+}
 h1{
     font-size: 33px;
     font-weight: bold;
@@ -99,6 +116,11 @@ h2{
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 40px;
+    font-family: $font-VIE;
+    text-transform: uppercase;
+    span{
+            font-weight: normal;
+        }
 }
 h3{
     font-size: 25px;
@@ -107,6 +129,26 @@ h3{
 h4{
     font-size: 16px;
 }
+.banner{
+    padding: 20px 0 40px;
+}
+header,
+section,
+footer{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+    }
+}
+
 nav.top-menu{
     font-size: 16px;
     margin-bottom: 0;
@@ -117,6 +159,7 @@ nav.top-menu{
     position: relative;
     .top-logo{
         position: absolute;
+        z-index: 99;
         top: 0;
         left: 35px;
         background: $color-blue;
@@ -149,12 +192,8 @@ header.top-header{
     .title-header{
         background: $color-blue url(../images/header-bg-01.png) no-repeat 35px center;
         padding: 65px 0;
-        position: relative;
         &:before{
-            content: "";
-            position: absolute;
             width: calc(100% - 35px);
-            height: 100%;
             top: 0;
             background: transparent url(../images/header-bg-02.png) no-repeat right center  ;
         }
@@ -169,47 +208,29 @@ header.top-header{
 }
 
 .wel-come{
-    position: relative;
     background: transparent url(../images/wel-come-bg-01.png) no-repeat left 210px;
     z-index: 2;
     padding-bottom: 115px;
     &:before{
-        content: '';
-        position: absolute;
         background: transparent url(../images/wel-come-bg-02.png) no-repeat left bottom;
-        width: 100%;
         height: calc(100% - 130px);
         z-index: -1;
     }
     &:after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
         top: 0;
+        height: 100%;
         background: transparent url(../images/wel-come-bg-03.png) no-repeat right 500px;
         z-index: -1;
     }
-    .banner{
-        padding: 20px 0 40px;
-    }
     h2{
-        text-transform: uppercase;
-        font-family: $font-VIE;
         color: $color-blue;
         text-align: center;
-        span{
-            font-weight: normal;
-        }
     }
     .text-content{
         text-align:center; 
     }
     .btn{
         margin: 30px 5px 70px;
-        &:hover{
-            @extend .btn-blue;
-        }
     }
     .wel-come-more{
         color: $color-white;
@@ -249,14 +270,9 @@ header.top-header{
                     text-transform: capitalize;
                 }
                 .btn{
-                    color: $color-white;
-                    border-color: $color-white;
                     margin: 10px 0 0;
                     position: relative;
-                    z-index: 2;
-                    &:hover{
-                        @extend .btn-yellow;
-                    }
+                    z-index: 2;                 
                 }
             }
             img{
@@ -270,13 +286,10 @@ header.top-header{
 .amazinng{
     background: #27AAE1 url(../images/amazinng-bg-01.png) no-repeat 50px bottom;
     padding: 70px 0;
-    position: relative;
     &:before{
-        content: '';
         width: 746px;
         height: 604px;
         background:  url(../images/amazinng-bg-02.png) no-repeat ;
-        position: absolute;
         bottom: 0;
         right: 6%;
     }
@@ -286,7 +299,6 @@ header.top-header{
     }
     h2{
         color: $color-yellow;
-        font-family: $font-VIE;
         margin-bottom: 15px;
     }
     h4{
@@ -295,9 +307,6 @@ header.top-header{
     }
     .btn{
         margin-top: 60px;
-        &:hover{
-            @extend .btn-blue;
-        }
     }
 }
 
@@ -305,12 +314,7 @@ header.top-header{
     background: $color-yellow url(../images/gift-bg-01.png) no-repeat left bottom ;
     text-align: right;
     padding: 35px 0 60px;
-    position: relative;
     &:before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
         left: 0;
         top: 0;
         background: url(../images/gift-bg-02.png) no-repeat right bottom;
@@ -325,9 +329,6 @@ header.top-header{
     }
     .btn{
         margin-top: 60px;
-        &:hover{
-            @extend .btn-blue;
-        }
     }
 }
 
@@ -335,12 +336,7 @@ header.top-header{
     padding: 70px 0;
     text-align: center;
     background: #F7941E url(../images/feeling-bg-01.png) no-repeat left 160px ;
-    position: relative;
     &:before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
         left: 0;
         top: 0;
         background: url(../images/feeling-bg-02.png) no-repeat right 300px;
@@ -418,9 +414,6 @@ header.top-header{
         .form-group{
                 margin-bottom: 25px;
             }
-        select{
-            color: $color-blue;
-        }
         .row{
             .col-md-5{
                 span{
@@ -433,13 +426,15 @@ header.top-header{
                 }
             }
         }
-        .btn{
-            color: $color-white;
-            border-color: $color-white;
-            &:hover{
-                @extend .btn-yellow;
-            }
-        }
+    }
+}
+form{
+    label{
+        color: $color-blue;
+    }
+    input,textarea,select{
+        border-color: $color-blue !important;
+        color: $color-blue !important;
     }
 }
 ::-webkit-input-placeholder {
@@ -455,20 +450,61 @@ header.top-header{
   color: $color-blue !important;
 }
 
+.contact{
+    color: $color-blue;
+    padding-bottom: 100px;
+    background: $color-yellow url(../images/contact-bg-01.png) no-repeat left bottom;
+    &:before{
+        background: url(../images/contact-bg-02.png) no-repeat right bottom;
+        right: 0;
+        bottom: 0;
+    }
+    h2{
+        text-align: center;
+        color: $color-blue;
+        margin-bottom: 70px;
+    }
+    .gift-pack{
+        .title{
+            margin-bottom: 40px;
+        }
+        div{
+            margin-bottom: 30px;
+            h4{
+                margin-top: -10px;
+                margin-bottom: 30px;
+            }
+            .btn{
+                margin-top: 10px;
+            }
+        }
+    }
+    .contact-register{
+        background: $color-white;
+        color: $color-blue;
+        border-radius: 25px;
+        border: 1px solid #D1D2D4;
+        padding: 35px 30px 20px;
+        box-shadow: 5px 5px 15px #37343E;
+        .btn{
+            margin-top: 5px;
+        }
+    }
+}
+
 footer{
     text-align: center;
     color: $color-white;
     background: $color-blue url(../images/footer-bg-01.png) no-repeat 1.9% center;
-    position: relative;
     &:before{
-        content: '';
         width: 157px;
         height: 104px;
-        position: absolute;
         background: $color-blue url(../images/footer-bg-02.png) no-repeat;
         top: 40px;
         right: 1.5%;
-
+    }
+    &:after{
+        height: 0;
     }
     padding: 40px 0 30px;
     .container{
@@ -490,6 +526,13 @@ footer{
                 color: $color-white;
             }
         }
+    }
+}
+
+.footer-orange{
+    background: #F7941E url(../images/footer-orange-bg-01.png) no-repeat 7% center;
+    &:before{
+        background: url(../images/footer-orange-bg-02.png);
     }
 }
 
@@ -612,6 +655,12 @@ footer{
             }
         }
     }
+    
+    .contact{
+        .gift-pack{
+            text-align: center;
+        }
+    }
 }
 @media only screen and (max-width: 480px){
     h1{
@@ -657,5 +706,12 @@ footer{
     }
     .feeling{
         padding: 10px 0 20px;
+    }
+    
+    .contact{
+        .contact-register{
+            padding: 15px;
+            border-radius: 15px;
+        }
     }
 }

@@ -40,7 +40,7 @@ img {
     margin: 0;
     padding-right: 10px; }
 
-.btn-blue, .wel-come .btn:hover, .amazinng .btn:hover, .gift .btn:hover {
+.btn-blue, .btn-white:hover {
   background: #050D9E;
   color: #FFDE17; }
 
@@ -49,7 +49,11 @@ img {
   border-color: #050D9E;
   color: #050D9E; }
 
-.btn-yellow, .wel-come .wel-come-more .box div .btn:hover, .register form .btn:hover {
+.btn-white-border {
+  color: #fff;
+  border-color: #fff; }
+
+.btn-yellow, .btn-white-border:hover {
   background: #FFDE17;
   border-color: #FFDE17;
   color: #050D9E; }
@@ -58,6 +62,13 @@ img {
   color: #050D9E;
   font-weight: 300; }
 
+.text-content-02 {
+  font-size: 16px;
+  line-height: 1.2em; }
+
+.note {
+  line-height: 1.2em; }
+
 h1 {
   font-size: 33px;
   font-weight: bold; }
@@ -65,7 +76,11 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-family: "VIE-KievitOT", sans-serif;
+  text-transform: uppercase; }
+  h2 span {
+    font-weight: normal; }
 
 h3 {
   font-size: 25px;
@@ -73,6 +88,27 @@ h3 {
 
 h4 {
   font-size: 16px; }
+
+.banner {
+  padding: 20px 0 40px; }
+
+header,
+section,
+footer {
+  position: relative; }
+  header:before,
+  section:before,
+  footer:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  header:after,
+  section:after,
+  footer:after {
+    content: "";
+    position: absolute;
+    width: 100%; }
 
 nav.top-menu {
   font-size: 16px;
@@ -84,6 +120,7 @@ nav.top-menu {
   position: relative; }
   nav.top-menu .top-logo {
     position: absolute;
+    z-index: 99;
     top: 0;
     left: 35px;
     background: #050D9E;
@@ -104,13 +141,9 @@ nav.top-menu {
 
 header.top-header .title-header {
   background: #050D9E url(../images/header-bg-01.png) no-repeat 35px center;
-  padding: 65px 0;
-  position: relative; }
+  padding: 65px 0; }
   header.top-header .title-header:before {
-    content: "";
-    position: absolute;
     width: calc(100% - 35px);
-    height: 100%;
     top: 0;
     background: transparent url(../images/header-bg-02.png) no-repeat right center; }
   header.top-header .title-header h1 {
@@ -121,34 +154,21 @@ header.top-header .title-header {
     text-align: center; }
 
 .wel-come {
-  position: relative;
   background: transparent url(../images/wel-come-bg-01.png) no-repeat left 210px;
   z-index: 2;
   padding-bottom: 115px; }
   .wel-come:before {
-    content: '';
-    position: absolute;
     background: transparent url(../images/wel-come-bg-02.png) no-repeat left bottom;
-    width: 100%;
     height: calc(100% - 130px);
     z-index: -1; }
   .wel-come:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
+    height: 100%;
     background: transparent url(../images/wel-come-bg-03.png) no-repeat right 500px;
     z-index: -1; }
-  .wel-come .banner {
-    padding: 20px 0 40px; }
   .wel-come h2 {
-    text-transform: uppercase;
-    font-family: "VIE-KievitOT", sans-serif;
     color: #050D9E;
     text-align: center; }
-    .wel-come h2 span {
-      font-weight: normal; }
   .wel-come .text-content {
     text-align: center; }
   .wel-come .btn {
@@ -186,8 +206,6 @@ header.top-header .title-header {
           margin-bottom: 10px;
           text-transform: capitalize; }
         .wel-come .wel-come-more .box div .btn {
-          color: #fff;
-          border-color: #fff;
           margin: 10px 0 0;
           position: relative;
           z-index: 2; }
@@ -197,14 +215,11 @@ header.top-header .title-header {
 
 .amazinng {
   background: #27AAE1 url(../images/amazinng-bg-01.png) no-repeat 50px bottom;
-  padding: 70px 0;
-  position: relative; }
+  padding: 70px 0; }
   .amazinng:before {
-    content: '';
     width: 746px;
     height: 604px;
     background: url(../images/amazinng-bg-02.png) no-repeat;
-    position: absolute;
     bottom: 0;
     right: 6%; }
   .amazinng .container {
@@ -212,7 +227,6 @@ header.top-header .title-header {
     z-index: 2; }
   .amazinng h2 {
     color: #FFDE17;
-    font-family: "VIE-KievitOT", sans-serif;
     margin-bottom: 15px; }
   .amazinng h4 {
     color: #FFDE17;
@@ -223,13 +237,8 @@ header.top-header .title-header {
 .gift {
   background: #FFDE17 url(../images/gift-bg-01.png) no-repeat left bottom;
   text-align: right;
-  padding: 35px 0 60px;
-  position: relative; }
+  padding: 35px 0 60px; }
   .gift:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     left: 0;
     top: 0;
     background: url(../images/gift-bg-02.png) no-repeat right bottom; }
@@ -245,13 +254,8 @@ header.top-header .title-header {
 .feeling {
   padding: 70px 0;
   text-align: center;
-  background: #F7941E url(../images/feeling-bg-01.png) no-repeat left 160px;
-  position: relative; }
+  background: #F7941E url(../images/feeling-bg-01.png) no-repeat left 160px; }
   .feeling:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     left: 0;
     top: 0;
     background: url(../images/feeling-bg-02.png) no-repeat right 300px;
@@ -311,17 +315,19 @@ header.top-header .title-header {
     color: #fff; }
   .register form .form-group {
     margin-bottom: 25px; }
-  .register form select {
-    color: #050D9E; }
   .register form .row .col-md-5 span {
     color: #fff;
     vertical-align: baseline;
     margin-right: 10px; }
   .register form .row .col-md-5 input[type=radio] {
     vertical-align: sub; }
-  .register form .btn {
-    color: #fff;
-    border-color: #fff; }
+
+form label {
+  color: #050D9E; }
+
+form input, form textarea, form select {
+  border-color: #050D9E !important;
+  color: #050D9E !important; }
 
 ::-webkit-input-placeholder {
   color: #050D9E !important; }
@@ -335,20 +341,50 @@ header.top-header .title-header {
 :-moz-placeholder {
   color: #050D9E !important; }
 
+.contact {
+  color: #050D9E;
+  padding-bottom: 100px;
+  background: #FFDE17 url(../images/contact-bg-01.png) no-repeat left bottom; }
+  .contact:before {
+    background: url(../images/contact-bg-02.png) no-repeat right bottom;
+    right: 0;
+    bottom: 0; }
+  .contact h2 {
+    text-align: center;
+    color: #050D9E;
+    margin-bottom: 70px; }
+  .contact .gift-pack .title {
+    margin-bottom: 40px; }
+  .contact .gift-pack div {
+    margin-bottom: 30px; }
+    .contact .gift-pack div h4 {
+      margin-top: -10px;
+      margin-bottom: 30px; }
+    .contact .gift-pack div .btn {
+      margin-top: 10px; }
+  .contact .contact-register {
+    background: #fff;
+    color: #050D9E;
+    border-radius: 25px;
+    border: 1px solid #D1D2D4;
+    padding: 35px 30px 20px;
+    box-shadow: 5px 5px 15px #37343E; }
+    .contact .contact-register .btn {
+      margin-top: 5px; }
+
 footer {
   text-align: center;
   color: #fff;
   background: #050D9E url(../images/footer-bg-01.png) no-repeat 1.9% center;
-  position: relative;
   padding: 40px 0 30px; }
   footer:before {
-    content: '';
     width: 157px;
     height: 104px;
-    position: absolute;
     background: #050D9E url(../images/footer-bg-02.png) no-repeat;
     top: 40px;
     right: 1.5%; }
+  footer:after {
+    height: 0; }
   footer .container {
     position: relative;
     z-index: 2; }
@@ -365,6 +401,11 @@ footer {
       margin: 0 10px; }
       footer .list-unstyled li a {
         color: #fff; }
+
+.footer-orange {
+  background: #F7941E url(../images/footer-orange-bg-01.png) no-repeat 7% center; }
+  .footer-orange:before {
+    background: url(../images/footer-orange-bg-02.png); }
 
 @media only screen and (max-width: 1050px) {
   nav.top-menu .nav li {
@@ -433,7 +474,9 @@ footer {
       margin-bottom: 0;
       margin-top: 0; }
       .register form .form-group input, .register form .form-group select {
-        margin-bottom: 15px; } }
+        margin-bottom: 15px; }
+  .contact .gift-pack {
+    text-align: center; } }
 
 @media only screen and (max-width: 480px) {
   h1 {
@@ -459,6 +502,9 @@ footer {
   .wel-come .wel-come-more .box {
     border-radius: 15px; }
   .feeling {
-    padding: 10px 0 20px; } }
+    padding: 10px 0 20px; }
+  .contact .contact-register {
+    padding: 15px;
+    border-radius: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
