@@ -94,18 +94,21 @@ h4 {
 
 header,
 section,
-footer {
+footer,
+.title-header {
   position: relative; }
   header:before,
   section:before,
-  footer:before {
+  footer:before,
+  .title-header:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%; }
   header:after,
   section:after,
-  footer:after {
+  footer:after,
+  .title-header:after {
     content: "";
     position: absolute;
     width: 100%; }
@@ -137,7 +140,7 @@ form div span {
 :-moz-placeholder {
   color: #050D9E !important; }
 
-/*===========================================================*/
+/*=============================== Start index.html ===============================*/
 nav.top-menu {
   font-size: 16px;
   margin-bottom: 0;
@@ -262,6 +265,160 @@ header.top-header .title-header {
   .amazinng .btn {
     margin-top: 60px; }
 
+.gift {
+  background: #FFDE17 url(../images/gift-bg-01.png) no-repeat left bottom;
+  text-align: right;
+  padding: 35px 0 60px; }
+  .gift:before {
+    left: 0;
+    top: 0;
+    background: url(../images/gift-bg-02.png) no-repeat right bottom; }
+  .gift h4 {
+    color: #050D9E;
+    margin-top: 60px; }
+  .gift h3 {
+    color: #050D9E;
+    margin-bottom: 30px; }
+  .gift .btn {
+    margin-top: 60px; }
+
+.feeling {
+  padding: 70px 0;
+  text-align: center;
+  background: #F7941E url(../images/feeling-bg-01.png) no-repeat left 160px; }
+  .feeling:before {
+    left: 0;
+    top: 0;
+    background: url(../images/feeling-bg-02.png) no-repeat right 300px;
+    z-index: 1; }
+  .feeling h2 {
+    color: #FFDE17;
+    font-size: 30px; }
+  .feeling .box {
+    width: 1000px;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-content: space-between;
+    -webkit-align-content: space-between;
+    position: relative;
+    z-index: 2; }
+    .feeling .box .box-item-left img {
+      width: 600px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 15px;
+      border: 8px solid #FFDE17;
+      margin-right: 10px; }
+    .feeling .box .box-item-right {
+      margin-left: 10px; }
+      .feeling .box .box-item-right .box-item-child:not(:last-child) {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #F26522; }
+      .feeling .box .box-item-right .box-item-child {
+        display: -webkit-flex;
+        display: flex; }
+        .feeling .box .box-item-right .box-item-child .box-child-img img {
+          width: 130px;
+          height: 100px;
+          border-radius: 10px;
+          border: 3px solid #FFDE17;
+          overflow: hidden; }
+        .feeling .box .box-item-right .box-item-child .text-content {
+          width: 245px;
+          margin-left: 15px;
+          margin-top: 5px; }
+          .feeling .box .box-item-right .box-item-child .text-content p {
+            font-weight: 300;
+            line-height: 1.4em;
+            color: #fff;
+            text-align: left; }
+
+.register {
+  text-align: center;
+  background: url(../images/register-bg.png) no-repeat;
+  background-size: cover;
+  padding: 90px 0 35px; }
+  .register h2 {
+    color: #fff; }
+  .register form .form-group {
+    margin-bottom: 25px; }
+  .register form .row .col-md-5 span {
+    color: #fff; }
+
+footer {
+  text-align: center;
+  color: #fff;
+  background: #050D9E url(../images/footer-bg-01.png) no-repeat 1.9% center;
+  padding: 40px 0 30px; }
+  footer:before {
+    width: 157px;
+    height: 104px;
+    background: url(../images/footer-bg-02.png) no-repeat;
+    top: 40px;
+    right: 1.5%; }
+  footer:after {
+    height: 0; }
+  footer .container {
+    position: relative;
+    z-index: 2; }
+  footer .list-unstyled {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff; }
+    footer .list-unstyled li {
+      margin: 0 10px; }
+      footer .list-unstyled li a {
+        color: #fff; }
+
+/*=============================== End index.html ===============================*/
+/*=============================== Start contact.html ===============================*/
+.contact {
+  color: #050D9E;
+  padding-bottom: 100px;
+  background: #FFDE17 url(../images/contact-bg-01.png) no-repeat left bottom; }
+  .contact:before {
+    background: url(../images/contact-bg-02.png) no-repeat right bottom;
+    right: 0;
+    bottom: 0; }
+  .contact h2 {
+    text-align: center;
+    color: #050D9E;
+    margin-bottom: 70px; }
+  .contact .gift-pack .title {
+    margin-bottom: 40px; }
+  .contact .gift-pack div {
+    margin-bottom: 30px; }
+    .contact .gift-pack div h4 {
+      margin-top: -10px;
+      margin-bottom: 30px; }
+    .contact .gift-pack div .btn {
+      margin-top: 10px; }
+  .contact .contact-register {
+    background: #fff;
+    color: #050D9E;
+    border-radius: 25px;
+    border: 1px solid #D1D2D4;
+    padding: 35px 30px 20px;
+    box-shadow: 5px 5px 15px #37343E; }
+    .contact .contact-register .btn {
+      margin-top: 5px; }
+
+.footer-orange {
+  background: #F7941E url(../images/footer-orange-bg-01.png) no-repeat 7% center; }
+  .footer-orange:before {
+    background: url(../images/footer-orange-bg-02.png); }
+
+/*=============================== End contact.html ===============================*/
+/*=============================== Start amazing.html (Amazinng Race) ===============================*/
 .amazinng-page-header {
   background: #27aae1 url(../images/amazing-page-bg-01.png) no-repeat 60px bottom;
   color: #FFDE17;
@@ -364,157 +521,141 @@ header.top-header .title-header {
         bottom: 0;
         right: 0; }
 
-.gift {
-  background: #FFDE17 url(../images/gift-bg-01.png) no-repeat left bottom;
-  text-align: right;
-  padding: 35px 0 60px; }
-  .gift:before {
-    left: 0;
-    top: 0;
-    background: url(../images/gift-bg-02.png) no-repeat right bottom; }
-  .gift h4 {
-    color: #050D9E;
-    margin-top: 60px; }
-  .gift h3 {
-    color: #050D9E;
-    margin-bottom: 30px; }
-  .gift .btn {
-    margin-top: 60px; }
+/*=============================== End amazing.html (Amazinng Race) ===============================*/
+/*=============================== Start amazing-summer.html ===============================*/
+.rps-table th {
+  display: none; }
 
-.feeling {
-  padding: 70px 0;
-  text-align: center;
-  background: #F7941E url(../images/feeling-bg-01.png) no-repeat left 160px; }
-  .feeling:before {
-    left: 0;
-    top: 0;
-    background: url(../images/feeling-bg-02.png) no-repeat right 300px;
-    z-index: 1; }
-  .feeling h2 {
-    color: #FFDE17;
-    font-size: 30px; }
-  .feeling .box {
-    width: 1000px;
-    margin: auto;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-content: space-between;
-    -webkit-align-content: space-between;
-    position: relative;
-    z-index: 2; }
-    .feeling .box .box-item-left img {
-      width: 600px;
-      height: 350px;
-      overflow: hidden;
-      border-radius: 15px;
-      border: 8px solid #FFDE17;
-      margin-right: 10px; }
-    .feeling .box .box-item-right {
-      margin-left: 10px; }
-      .feeling .box .box-item-right .box-item-child:not(:last-child) {
-        margin-bottom: 12px;
-        padding-bottom: 12px;
-        border-bottom: 2px solid #F26522; }
-      .feeling .box .box-item-right .box-item-child {
-        display: -webkit-flex;
-        display: flex; }
-        .feeling .box .box-item-right .box-item-child .box-child-img img {
-          width: 130px;
-          height: 100px;
-          border-radius: 10px;
-          border: 3px solid #FFDE17;
-          overflow: hidden; }
-        .feeling .box .box-item-right .box-item-child .text-content {
-          width: 245px;
-          margin-left: 15px;
-          margin-top: 5px; }
-          .feeling .box .box-item-right .box-item-child .text-content p {
-            font-weight: 300;
-            line-height: 1.4em;
-            color: #fff;
-            text-align: left; }
+.rps-table td {
+  display: block; }
 
-.register {
-  text-align: center;
-  background: url(../images/register-bg.png) no-repeat;
-  background-size: cover;
-  padding: 90px 0 35px; }
-  .register h2 {
-    color: #fff; }
-  .register form .form-group {
-    margin-bottom: 25px; }
-  .register form .row .col-md-5 span {
-    color: #fff; }
+.rps-table td:before {
+  content: attr(data-th) " ";
+  display: inline-block; }
 
-.contact {
+/*
+.rps-table td:first-child {
+    padding-top: .5em;
+}
+.rps-table td:last-child {
+    padding-bottom: .5em;
+}
+*/
+@media (min-width: 768px) {
+  .rps-table td:before {
+    display: none; }
+  .rps-table th,
+  .rps-table td {
+    display: table-cell; } }
+
+.flex-items-end {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end; }
+
+.amazinng-summer-top {
   color: #050D9E;
-  padding-bottom: 100px;
-  background: #FFDE17 url(../images/contact-bg-01.png) no-repeat left bottom; }
-  .contact:before {
-    background: url(../images/contact-bg-02.png) no-repeat right bottom;
-    right: 0;
-    bottom: 0; }
-  .contact h2 {
-    text-align: center;
-    color: #050D9E;
-    margin-bottom: 70px; }
-  .contact .gift-pack .title {
-    margin-bottom: 40px; }
-  .contact .gift-pack div {
-    margin-bottom: 30px; }
-    .contact .gift-pack div h4 {
-      margin-top: -10px;
-      margin-bottom: 30px; }
-    .contact .gift-pack div .btn {
-      margin-top: 10px; }
-  .contact .contact-register {
-    background: #fff;
-    color: #050D9E;
-    border-radius: 25px;
-    border: 1px solid #D1D2D4;
-    padding: 35px 30px 20px;
-    box-shadow: 5px 5px 15px #37343E; }
-    .contact .contact-register .btn {
-      margin-top: 5px; }
-
-footer {
   text-align: center;
-  color: #fff;
-  background: #050D9E url(../images/footer-bg-01.png) no-repeat 1.9% center;
-  padding: 40px 0 30px; }
-  footer:before {
-    width: 157px;
-    height: 104px;
-    background: #050D9E url(../images/footer-bg-02.png) no-repeat;
-    top: 40px;
-    right: 1.5%; }
-  footer:after {
-    height: 0; }
-  footer .container {
+  background: url(../images/amazinng-summer/amazing-summer-bg-01.png) no-repeat left 230px; }
+  .amazinng-summer-top:before {
+    background: url(../images/amazinng-summer/amazing-summer-bg-02.png) no-repeat right 300px;
+    left: 0; }
+  .amazinng-summer-top .btn {
+    margin: 25px 0 50px; }
+
+.six-skill {
+  background: #00A14B url(../images/amazinng-summer/six-skill-ng-01.png) no-repeat 35px center;
+  padding-top: 30px;
+  color: #fff; }
+  .six-skill:before {
+    background: url(../images/amazinng-summer/six-skill-ng-02.png) no-repeat right center;
+    right: 35px;
+    top: 0; }
+  .six-skill div {
     position: relative;
     z-index: 2; }
-  footer .list-unstyled {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #fff; }
-    footer .list-unstyled li {
-      margin: 0 10px; }
-      footer .list-unstyled li a {
-        color: #fff; }
+    .six-skill div h2 {
+      text-transform: none;
+      color: #FFDE17; }
+    .six-skill div .btn {
+      margin: 20px 0 40px; }
 
-.footer-orange {
-  background: #F7941E url(../images/footer-orange-bg-01.png) no-repeat 7% center; }
-  .footer-orange:before {
-    background: url(../images/footer-orange-bg-02.png); }
+.kiddom {
+  padding-top: 40px;
+  text-align: right;
+  background: #FFDE17 url(../images/amazinng-summer/ILA-footer-bg-02.png) no-repeat 70px 70px; }
+  .kiddom:before {
+    background: url(../images/amazinng-summer/ILA-footer-bg-01.png) no-repeat left bottom;
+    top: 0;
+    left: 0; }
+  .kiddom:after {
+    background: url(../images/amazinng-summer/ILA-footer-bg-03.png) no-repeat right bottom;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .kiddom div {
+    position: relative;
+    z-index: 2; }
+    .kiddom div h2 {
+      text-transform: none;
+      color: #050D9E; }
+    .kiddom div table.happy-kiddom {
+      width: 100%; }
+      .kiddom div table.happy-kiddom tr {
+        font-weight: bold;
+        line-height: 1.2em; }
+        .kiddom div table.happy-kiddom tr th, .kiddom div table.happy-kiddom tr td {
+          text-align: center;
+          width: 20%;
+          padding: 15px 10px;
+          color: #fff; }
+          .kiddom div table.happy-kiddom tr th:not(:first-child), .kiddom div table.happy-kiddom tr td:not(:first-child) {
+            border: 1px solid #fff;
+            color: #FFDE17; }
+          .kiddom div table.happy-kiddom tr th:first-child, .kiddom div table.happy-kiddom tr td:first-child {
+            width: 40%;
+            background: #050D9E;
+            border: 1px solid #E6E7E8; }
+          .kiddom div table.happy-kiddom tr th:nth-child(2), .kiddom div table.happy-kiddom tr td:nth-child(2) {
+            background: #27A9E1; }
+          .kiddom div table.happy-kiddom tr th:nth-child(3), .kiddom div table.happy-kiddom tr td:nth-child(3) {
+            background: #F16521; }
+          .kiddom div table.happy-kiddom tr th:last-child, .kiddom div table.happy-kiddom tr td:last-child {
+            background: #00A14B; }
+        .kiddom div table.happy-kiddom tr td {
+          color: #050D9E;
+          background: #fff; }
+          .kiddom div table.happy-kiddom tr td:first-child {
+            background: #fff;
+            border: 1px solid #E6E7E8; }
+    .kiddom div .btn {
+      margin: 30px 0; }
 
+.adventures {
+  padding-top: 40px;
+  color: #fff;
+  background: #F7941E url(../images/amazinng-summer/adventures-bg-01.png) no-repeat left center; }
+  .adventures:before {
+    background: url(../images/amazinng-summer/adventures-bg-02.png) no-repeat right bottom;
+    left: 0;
+    bottom: 40px; }
+  .adventures div {
+    position: relative;
+    z-index: 2; }
+    .adventures div h2 {
+      text-transform: none; }
+    .adventures div p {
+      margin-bottom: 0; }
+    .adventures div .btn {
+      margin: 80px 0 30px; }
+
+footer.cyan {
+  background-color: #27A9E1; }
+
+/*=============================== End amazing-summer.html ===============================*/
 @media only screen and (max-width: 1050px) {
+  /*=========== Start index.html ===========*/
   nav.top-menu .nav li {
     margin-left: 5px; }
     nav.top-menu .nav li a {
@@ -536,7 +677,8 @@ footer {
           width: 100%;
           height: auto; }
       .feeling .box .box-item-right .box-item-child .text-content {
-        width: auto; } }
+        width: auto; }
+  /*=========== End index.html ===========*/ }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -544,6 +686,7 @@ footer {
   h2 {
     font-size: 30px;
     margin-bottom: 25px; }
+  /*=========== Start index.html ===========*/
   nav.top-menu {
     background: #FFDE17;
     padding: 0; }
@@ -567,14 +710,6 @@ footer {
       margin: 20px 5px 50px; }
   .amazinng {
     padding: 40px 0; }
-  .amazinng-page-header div {
-    text-align: center; }
-  .amazinng-page .amazinng-page-box {
-    text-align: center; }
-    .amazinng-page .amazinng-page-box > div:not(:last-child) {
-      margin-bottom: 2em; }
-  .ILA-footer div .ILA-footer-item {
-    margin-bottom: 1em; }
   .gift {
     text-align: center; }
   .feeling {
@@ -590,8 +725,46 @@ footer {
       margin-top: 0; }
       .register form .form-group input, .register form .form-group select {
         margin-bottom: 15px; }
+  /*=========== End index.html ===========*/
+  /*=========== Start contact.html ===========*/
   .contact .gift-pack {
-    text-align: center; } }
+    text-align: center; }
+  /*=========== End contact.html ===========*/
+  /*=========== Start amazinng.html (Amazinng Race) ===========*/
+  .amazinng-page-header div {
+    text-align: center; }
+  .amazinng-page .amazinng-page-box {
+    text-align: center; }
+    .amazinng-page .amazinng-page-box > div:not(:last-child) {
+      margin-bottom: 2em; }
+  .ILA-footer div .ILA-footer-item {
+    margin-bottom: 1em; }
+  /*=========== End amazinng.html (Amazinng Race) ===========*/
+  /*=========== Start amazinng-summer.html ===========*/
+  .six-skill, .kiddom, .adventures {
+    text-align: center; }
+    .six-skill .flex-items-end, .kiddom .flex-items-end, .adventures .flex-items-end {
+      display: block; }
+  .kiddom .flex-items-end div:first-child {
+    display: none; }
+  .kiddom .flex-items-end div table.happy-kiddom tr {
+    margin-bottom: 1em; }
+    .kiddom .flex-items-end div table.happy-kiddom tr th, .kiddom .flex-items-end div table.happy-kiddom tr td {
+      width: 100%;
+      text-align: left; }
+    .kiddom .flex-items-end div table.happy-kiddom tr td {
+      border-bottom: none; }
+      .kiddom .flex-items-end div table.happy-kiddom tr td:before {
+        text-align: left;
+        width: 120px; }
+      .kiddom .flex-items-end div table.happy-kiddom tr td:first-child {
+        text-align: center;
+        margin-top: 2em; }
+        .kiddom .flex-items-end div table.happy-kiddom tr td:first-child:before {
+          width: 0; }
+  .adventures div .btn {
+    margin-top: 20px; }
+  /*=========== End amazinng-summer.html ===========*/ }
 
 @media only screen and (max-width: 480px) {
   h1 {
@@ -604,6 +777,7 @@ footer {
     text-align: justify; }
   .btn {
     width: 100%; }
+  /*=========== Start index.html ===========*/
   nav.top-menu .top-logo {
     padding: 5px;
     left: 15px; }
@@ -618,10 +792,19 @@ footer {
     border-radius: 15px; }
   .feeling {
     padding: 10px 0 20px; }
+  /*=========== End index.html ===========*/
+  /*=========== Start contact.html ===========*/
   .contact .contact-register {
     padding: 15px;
     border-radius: 15px; }
+  /*=========== End contact.html ===========*/
+  /*=========== Start amazinng.html (Amazinng Race) ===========*/
   .ILA-footer div .ILA-footer-item .box .btn {
-    width: 135px; } }
+    width: 135px; }
+  /*=========== End amazinng.html (Amazinng Race) ===========*/
+  /*=========== Start amazinng-summer.html ===========*/
+  .amazinng-summer-top div center .btn:first-child {
+    margin-bottom: 0; }
+  /*=========== End amazinng-summer.html ===========*/ }
 
 /*# sourceMappingURL=style.css.map */
