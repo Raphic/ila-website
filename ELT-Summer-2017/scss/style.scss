@@ -149,6 +149,38 @@ footer{
     }
 }
 
+form{
+    label{
+        color: $color-blue;
+    }
+    input,textarea,select{
+        border-color: $color-blue !important;
+        color: $color-blue !important;
+    }
+    input[type=radio]{
+        vertical-align: sub;
+    }
+    div{
+        span{
+            color: $color-blue;
+            vertical-align: baseline;
+            margin-right: 10px;
+        }
+    }
+}
+::-webkit-input-placeholder {
+  color: $color-blue !important;
+}
+::-moz-placeholder {
+  color: $color-blue !important;
+}
+:-ms-input-placeholder {
+  color: $color-blue !important;
+}
+:-moz-placeholder {
+  color: $color-blue !important;
+}
+/*===========================================================*/
 nav.top-menu{
     font-size: 16px;
     margin-bottom: 0;
@@ -310,6 +342,140 @@ header.top-header{
     }
 }
 
+.amazinng-page-header{
+    background: #27aae1 url(../images/amazing-page-bg-01.png) no-repeat 60px bottom ;
+    color: $color-yellow;
+    padding: 100px 0 130px;
+    z-index: 2;
+    &:before{
+        z-index: -1;
+        bottom: 0;
+        background: url(../images/amazinng-bg-02.png) no-repeat right top;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .btn{
+        margin-top: 40px;
+    }
+}
+
+.amazinng-page{
+    text-align: center;
+    color: $color-blue;
+    padding-bottom: 90px;
+    background: url(../images/amazing-page-bg-02.png) no-repeat left bottom;
+    &:before{
+        background: url(../images/amazing-page-bg-03.png) no-repeat right bottom;
+        left: 0;
+    }
+    .amazinng-page-box{
+        text-align: left;
+        margin-top: 40px;
+        .box-text{
+            padding: 0;
+            p{
+                margin-bottom: 5px;
+                line-height: 1.3em;
+            }
+        }
+    }
+}
+
+.rules{
+    text-align: center;
+    color: $color-blue;
+    padding: 30px 0;
+    background: #27A9E1 url(../images/rules-bg-01.png) no-repeat 140px bottom;
+    &:before{
+        background: url(../images/rules-bg-02.png) no-repeat right bottom;
+        width: calc(100% - 170px);
+        left: 0;
+        top: 0;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+}
+
+.ILA-footer{
+    padding: 20px 0 40px;
+    color: $color-white;
+    background: $color-yellow url(../images/ILA-footer-bg-01.png) no-repeat left bottom;
+    &:before{
+        background: url(../images/ILA-footer-bg-03.png) no-repeat right bottom;
+    }
+    &:after{
+        background: url(../images/ILA-footer-bg-02.png) no-repeat 120px 55px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    h2{
+        text-align: center;
+        color: $color-blue;    
+        z-index: 2;
+        position: relative;
+    }
+    div{
+        .ILA-footer-item{
+            z-index: 1;
+            &:nth-child(2){
+                color: $color-blue;
+                .box{
+                    background: #FFEE00;
+                }
+            }
+            &:nth-child(3){
+                .box{
+                    background: rgba(253,188,37,1);
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(253,188,37,1) 0%, rgba(247,147,32,1) 70%, rgba(246,138,31,1) 100%);
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(253,188,37,1)), color-stop(70%, rgba(247,147,32,1)), color-stop(100%, rgba(246,138,31,1)));
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(253,188,37,1) 0%, rgba(247,147,32,1) 70%, rgba(246,138,31,1) 100%);
+                    background: -o-radial-gradient(center, ellipse cover, rgba(253,188,37,1) 0%, rgba(247,147,32,1) 70%, rgba(246,138,31,1) 100%);
+                    background: -ms-radial-gradient(center, ellipse cover, rgba(253,188,37,1) 0%, rgba(247,147,32,1) 70%, rgba(246,138,31,1) 100%);
+                    background: radial-gradient(ellipse at center, rgba(253,188,37,1) 0%, rgba(247,147,32,1) 70%, rgba(246,138,31,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdbc25', endColorstr='#f68a1f', GradientType=1 );
+                }
+            }
+            .box{
+                background: #00A14B;
+                border-radius: 10px;
+                min-height: 235px;
+                position: relative;
+                overflow: hidden;
+                div{
+                    padding: 15px 10px;
+                    width: 63%;
+                    position: relative;
+                    h3{
+                        margin:10px 0 5px;
+                        font-family: $font-cabin;
+                    }
+                    p{
+                        line-height: 1.2em;
+                    }
+                }
+                .btn{
+                        position: absolute;
+                        z-index: 3;
+                        bottom: 25px;
+                        left: 10px;
+                        &:hover{
+                            border-color: $color-blue;
+                            @extend .btn-blue;
+                        }
+                    }
+                .img-margin{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
 .gift{
     background: $color-yellow url(../images/gift-bg-01.png) no-repeat left bottom ;
     text-align: right;
@@ -422,37 +588,6 @@ header.top-header{
             }
         }
     }
-}
-form{
-    label{
-        color: $color-blue;
-    }
-    input,textarea,select{
-        border-color: $color-blue !important;
-        color: $color-blue !important;
-    }
-    input[type=radio]{
-        vertical-align: sub;
-    }
-    div{
-        span{
-            color: $color-blue;
-            vertical-align: baseline;
-            margin-right: 10px;
-        }
-    }
-}
-::-webkit-input-placeholder {
-  color: $color-blue !important;
-}
-::-moz-placeholder {
-  color: $color-blue !important;
-}
-:-ms-input-placeholder {
-  color: $color-blue !important;
-}
-:-moz-placeholder {
-  color: $color-blue !important;
 }
 
 .contact{
@@ -634,6 +769,29 @@ footer{
         padding: 40px 0;
     }
     
+    .amazinng-page-header{
+        div{
+            text-align: center;
+        }
+    }
+    
+    .amazinng-page{
+        .amazinng-page-box{
+            text-align: center;
+            >div:not(:last-child){
+                margin-bottom: 2em;
+            }
+            
+        }
+    } 
+    
+    .ILA-footer{
+        div{
+            .ILA-footer-item{
+                margin-bottom: 1em;
+            }
+         }
+    }
     .gift{
         text-align: center;
     }
@@ -718,5 +876,17 @@ footer{
             padding: 15px;
             border-radius: 15px;
         }
+    }
+    
+    .ILA-footer{
+        div{
+            .ILA-footer-item{
+                .box{
+                    .btn{
+                        width: 135px;
+                    }
+                }
+            } 
+        } 
     }
 }
