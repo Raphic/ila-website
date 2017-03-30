@@ -12,7 +12,8 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": true,
-            "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe"
+            "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe",
+            "fonts.fontSize": "15px"
         }
     }
 }

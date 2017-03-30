@@ -852,6 +852,137 @@ footer.cyan{
     background-color: #27A9E1;
 }
 /*=============================== End amazing-summer.html ===============================*/
+/*=============================== Start testimonial.html ===============================*/
+.slider-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 10px;
+    color: $color-white;
+    font-size: 14px;
+    text-align: left;
+    font-family: $font-montserrat;
+    line-height: 1.2em;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    @extend %transition;
+}
+.testimonial-top{
+    background: $color-yellow url(../images/testimonial/testimonial-bg-01.png) no-repeat left 140px;
+    &:before{
+        background: url(../images/testimonial/testimonial-bg-02.png) no-repeat right 200px;
+        top: 0;
+        left: 0;
+    }
+    h2{
+        color: $color-orange;
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+    .box-slider{
+        img{
+            width: 100%;
+        }
+        .box-slider-top{
+            background: #F7941E;
+            border-radius: 10px;
+            padding: 25px 10px;
+            color: $color-white;
+            overflow: hidden;
+            margin-bottom: 30px;
+            img{
+                border-radius: 10px;
+            }
+        }
+        .box-slider-bottom{
+            .box-slider-items{
+                border: 3px solid  #fff;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    border-color: #F7941E;
+                    cursor: pointer;
+                    @extend %transition;
+                    .slider-text{
+                        left: -100%;
+                    }
+                }
+                img{
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.gallery{
+    background: $color-yellow url(../images/testimonial/ILA-footer-bg-01.png) no-repeat left bottom;
+    &:before{
+        background: url(../images/testimonial/ILA-footer-bg-03.png) no-repeat right bottom;
+    }
+    h2{
+        color: $color-orange;
+    }
+    .box{
+        .box-item-right{
+            .box-item-child{
+                .text-content{
+                   p{
+                       color: $color-blue;
+                    } 
+                }
+            }
+        }
+        .box-item-left{
+            img{
+                border-color: #F7941E;
+            }
+        }
+    }
+    .seasons{
+        position: relative;
+        z-index: 2;
+        margin-top: 60px;
+        h2{
+            color: $color-white;
+            margin-top: 0;
+        }
+        .seasons-items{
+            .summer{
+                position: relative;
+                display: block;
+                overflow: hidden;
+                &:hover{
+                    .slider-text{
+                        left: -100%;
+                    }
+                }
+            } 
+            .summer.text-right{
+                &:hover{
+                     .slider-text{
+                        left: 100%;
+                    }
+                }
+                .slider-text{
+                    text-align: right;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+                    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+                }
+            }
+        }
+    }
+}
+/*=============================== End testimonial.html ===============================*/
 @media only screen and (max-width: 1050px){
     /*=========== Start index.html ===========*/
     nav.top-menu{
@@ -868,7 +999,7 @@ footer.cyan{
     .feeling{
         .box{
             display: block;
-            width: 100%;
+            width: calc(100% - 180px);
             padding: 0 15px;
             .box-item-left{
                 margin-bottom: 1em;
@@ -955,6 +1086,7 @@ footer.cyan{
         padding: 40px 0;
         .box{
             display: block;
+            width: 100%;
             .box-item-right{
                 margin-left: 0;
             }
@@ -1055,6 +1187,23 @@ footer.cyan{
         }
     }
     /*=========== End amazinng-summer.html ===========*/
+    /*=========== Start Testumonial.html ===========*/
+    .testimonial-top{
+        .box-slider{
+            .box-slider-bottom{
+                .box-slider-items{
+                    margin-bottom: 1em;
+                }
+            } 
+        } 
+    } 
+    .gallery{
+        padding: 20px 0 40px;
+        .seasons{
+            margin-top: 30px;        
+        }  
+    } 
+    /*=========== End Testumonial.html ===========*/
 }
 @media only screen and (max-width: 480px){
     h1{
@@ -1137,4 +1286,13 @@ footer.cyan{
         }
     }
     /*=========== End amazinng-summer.html ===========*/
+    /*=========== Start Testumonial.html ===========*/
+    .testimonial-top{
+        .box-slider{
+            .box-slider-top{
+                padding: 15px 1px;
+            }
+        }   
+    } 
+    /*=========== End Testumonial.html ===========*/
 }
